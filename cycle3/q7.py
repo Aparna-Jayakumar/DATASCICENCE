@@ -1,0 +1,15 @@
+import pandas as pd
+iris_data = pd.read_csv('iris.csv')
+print("i) Shape of the data set:")
+print(iris_data.shape)
+print("\nii) First 5 rows of the data set:")
+print(iris_data.head())
+
+print("\nLast 5 rows of the data set:")
+print(iris_data.tail())
+print("\niii) Size of the dataset:")
+print(iris_data.size)
+print("\niv) Number of samples available for each variety:")
+print(iris_data['variety'].value_counts())
+print("\nv) Description of the data set:")
+print(iris_data.describe())
